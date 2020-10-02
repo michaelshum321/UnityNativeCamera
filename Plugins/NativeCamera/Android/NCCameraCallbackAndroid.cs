@@ -29,6 +29,11 @@ namespace NativeCameraNamespace
 				if( callback != null )
 					callback( path );
 			}
+			catch (Exception e)
+			{
+				Debug.LogException(e);
+				throw e;
+			}
 			finally
 			{
 				Object.Destroy( callbackHelper.gameObject );
