@@ -31,7 +31,6 @@ namespace NativeCameraNamespace
 			}
 			catch (Exception e)
 			{
-				Debug.LogException(e);
 				throw e;
 			}
 			finally
